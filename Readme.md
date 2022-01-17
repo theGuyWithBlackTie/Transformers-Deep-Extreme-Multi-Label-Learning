@@ -4,10 +4,12 @@ Original paper idea doesn't include BERT and hence expects the input text to be 
 
 This repository uses BERT transformer and its BertTokenizer instead of BoW or external embeddings. The dataset used is EURLEX dataset from HuggingFace (https://huggingface.co/datasets/eurlex)
 
-The results obtained are:
-P@1: 0.66 <br>
-P@3: 0.56 <br>
+The results obtained are:<br>
+```
+P@1: 0.66
+P@3: 0.56
 P@5: 0.47
+```
 
 With BERT, the model achieved this score within 4 epochs and almost 4hrs of whole training time. Same performace is achieved in BoW case in 70 epochs but each epoch takes 10 seconds.
 
